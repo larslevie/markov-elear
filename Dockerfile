@@ -1,4 +1,4 @@
-FROM clojure
+FROM quay.io/orgsync/clojure
 WORKDIR /code
 ADD . /code/
 
@@ -10,7 +10,7 @@ RUN lein uberjar \
 
 WORKDIR /opt/markov-elear
 
-ENV HEAP_SIZE 200m
+ENV HEAP_SIZE 100m
 ENV APP_CONSUMER_KEY: foo
 ENV APP_CONSUMER_SECRET: foo
 ENV USER_ACCESS_TOKEN: foo

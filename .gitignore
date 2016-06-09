@@ -11,5 +11,5 @@ pom.xml.asc
 .hg/
 .idea/
 profiles.clj
-docker-compose.yml
 *.iml
+docker-compose.yml
