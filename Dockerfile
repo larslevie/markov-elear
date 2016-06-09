@@ -1,4 +1,4 @@
-FROM quay.io/orgsync/clojure
+FROM quay.io/orgsync/clojure:2.5.3
 WORKDIR /code
 ADD . /code/
 
