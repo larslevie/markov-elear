@@ -7,7 +7,10 @@
                  [overtone/at-at "1.2.0"]
                  [twitter-api "0.7.8"]
                  [environ "1.0.0"]]
-  :profiles {:uberjar {:aot :all
+  :profiles {:repl {:dependencies [[org.clojure/tools.namespace "0.2.11"]
+                                   [proto-repl "0.1.2"]
+                                   [proto-repl-charts "0.2.0"]]}
+             :uberjar {:aot :all
                        :uberjar-name "markov-elear.jar"}}
   :main markov-elear.generator
   :min-lein-version "2.0.0"
